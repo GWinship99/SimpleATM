@@ -32,6 +32,7 @@
             depositBtn = new Button();
             WithdrawBtn = new Button();
             currentBalanceBtn = new Button();
+            recentTransactions = new Button();
             SuspendLayout();
             // 
             // label1
@@ -73,11 +74,21 @@
             currentBalanceBtn.UseVisualStyleBackColor = true;
             currentBalanceBtn.Click += button3_Click;
             // 
+            // recentTransactions
+            // 
+            recentTransactions.Location = new Point(292, 266);
+            recentTransactions.Name = "recentTransactions";
+            recentTransactions.Size = new Size(247, 46);
+            recentTransactions.TabIndex = 4;
+            recentTransactions.Text = "Recent Transactions";
+            recentTransactions.UseVisualStyleBackColor = true;
+            // 
             // ATMFunctionsForm
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(recentTransactions);
             Controls.Add(currentBalanceBtn);
             Controls.Add(WithdrawBtn);
             Controls.Add(depositBtn);
@@ -94,5 +105,6 @@
         private Button depositBtn;
         private Button WithdrawBtn;
         private Button currentBalanceBtn;
+        private Button recentTransactions;
     }
 }

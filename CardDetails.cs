@@ -13,7 +13,7 @@ namespace SimpleATM
                                       // just in case
         public string CardNumber; // the number that's on the bank card that the user wants to use
         public string Balance; // the amount of money that's on the card - to make it easier to program the ATM this will be 0 by default
-        public string PIN; // the PIN number that the user will use to verify their ID.
-        public List<string> AcceptedPins = new List<string>(); // list of correct pins the ATM will accept
+        public string PIN = "1111"; // the PIN number that the user will use to verify their ID.
+       
     }
 }
