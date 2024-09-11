@@ -12,22 +12,32 @@ namespace SimpleATM
 {
     public partial class ATMFunctionsForm : Form
     {
+        // false = deposit, true = withdraw, the flag is changed depending on what button is clicked
+        public bool depositWithdraw = false; // will be using a flag to set whether the functionality is deposit/withdraw
         public ATMFunctionsForm()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void depositBtn_Click(object sender, EventArgs e)
+        {
+            DepositWithdrawForm depositWithdrawForm = new DepositWithdrawForm();
+            depositWithdrawForm.Show();
+        }
+
+        private void withdrawBtn_Click(object sender, EventArgs e)
+        {
+            depositWithdraw = true;
+            DepositWithdrawForm depositWithdrawForm = new DepositWithdrawForm();
+            depositWithdrawForm.Show();
+        }
+
+        private void currentBalanceBtn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void recentTransactions_Click(object sender, EventArgs e)
         {
 
         }

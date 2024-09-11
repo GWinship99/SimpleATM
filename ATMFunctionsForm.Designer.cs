@@ -52,7 +52,7 @@
             depositBtn.TabIndex = 1;
             depositBtn.Text = "Deposit";
             depositBtn.UseVisualStyleBackColor = true;
-            depositBtn.Click += button1_Click;
+            depositBtn.Click += depositBtn_Click;
             // 
             // WithdrawBtn
             // 
@@ -62,7 +62,7 @@
             WithdrawBtn.TabIndex = 2;
             WithdrawBtn.Text = "Withdraw";
             WithdrawBtn.UseVisualStyleBackColor = true;
-            WithdrawBtn.Click += button2_Click;
+            WithdrawBtn.Click += withdrawBtn_Click;
             // 
             // currentBalanceBtn
             // 
@@ -72,7 +72,7 @@
             currentBalanceBtn.TabIndex = 3;
             currentBalanceBtn.Text = "Current Balance";
             currentBalanceBtn.UseVisualStyleBackColor = true;
-            currentBalanceBtn.Click += button3_Click;
+            currentBalanceBtn.Click += currentBalanceBtn_Click;
             // 
             // recentTransactions
             // 
@@ -82,6 +82,7 @@
             recentTransactions.TabIndex = 4;
             recentTransactions.Text = "Recent Transactions";
             recentTransactions.UseVisualStyleBackColor = true;
+            recentTransactions.Click += recentTransactions_Click;
             // 
             // ATMFunctionsForm
             // 
