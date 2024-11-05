@@ -34,7 +34,8 @@ namespace SimpleATM
 
         private void currentBalanceBtn_Click(object sender, EventArgs e)
         {
-
+            CurrentBalanceForm currentBalanceForm = new CurrentBalanceForm();
+            currentBalanceForm.Show();
         }
 
         private void recentTransactions_Click(object sender, EventArgs e)

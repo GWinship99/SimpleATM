@@ -68,6 +68,7 @@
             PINEntryTxtBox.BackColor = SystemColors.Window;
             PINEntryTxtBox.Location = new Point(246, 133);
             PINEntryTxtBox.Name = "PINEntryTxtBox";
+            PINEntryTxtBox.PasswordChar = '*';
             PINEntryTxtBox.ReadOnly = true;
             PINEntryTxtBox.Size = new Size(249, 39);
             PINEntryTxtBox.TabIndex = 2;

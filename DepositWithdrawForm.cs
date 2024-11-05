@@ -13,7 +13,7 @@ namespace SimpleATM
     public partial class DepositWithdrawForm : Form
     {
         ATMFunctionsForm form = new ATMFunctionsForm();
-        CardDetails card = new CardDetails();
+        public CardDetails card = new CardDetails();
         public DepositWithdrawForm()
         {
             InitializeComponent();

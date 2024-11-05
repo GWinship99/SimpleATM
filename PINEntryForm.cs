@@ -3,10 +3,17 @@ namespace SimpleATM
     public partial class PINEntryForm : Form
     {
         CardDetails card = new CardDetails(); // initialise the card that will be used for this session
-
+        bool showPassword = false;
         public PINEntryForm()
         {
             InitializeComponent();
+            if (showPassword == false) {
+                PINEntryTxtBox.PasswordChar = '*';
+            }
+            else
+            {
+                PINEntryTxtBox.PasswordChar = '\0';
+            }
             
         }
 
